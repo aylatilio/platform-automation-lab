@@ -26,3 +26,20 @@ Run locally:
 ```bash
 pip install -r requirements.txt
 uvicorn main:app --reload
+
+---
+
+## ☁️ Terraform (Planned IaC)
+This folder (`/terraform`) contains a sample Terraform configuration that provisions an S3 bucket in AWS.
+
+### Highlights
+- Demonstrates Infrastructure as Code (IaC) concepts
+- Uses `aws` provider with local backend (no credentials required)
+- Shows structure of `resource`, `output`, and `provider`
+
+To test locally:
+```bash
+cd terraform
+terraform init
+terraform plan
+
